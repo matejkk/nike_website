@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel='icon' href="slike/nike.png" type="image/icon-x">
+    <title>Nike</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="slike/nike2.png" id="logo" alt=""></a>
+        <ul id="menu">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+    </header>
+    <section id="stran1">
+        <div id="prvi">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+                <path id="pot" stroke="black" stroke-width="3" d="M 569.00,349.00
+                   C 568.56,348.68 310.00,602.00 447.00,722.00
+                     447.00,722.00 510.00,781.10 661.00,729.00
+                     660.00,729.00 1519.00,352.00 1519.00,352.00
+                     1519.00,352.00 729.00,567.00 729.00,567.00
+                     556.00,615.00 535.00,524.00 529.00,495.00
+                     525.11,420.61 568.99,348.76 569.00,349.00" />
+            </svg>
+        </div>
+        <div id="drugi">
+            <p>EVERY SERVE. EVERY POINT. MAKE YOUR IMPACT.</p>
+        </div>
+        <div id="tretji">
+            <a href="#stran2" id="gumb"><img src="slike/down.png" witdh="100px" height="100px" alt=""></a>
+        </div>
+    </section>
+    <section id="stran2">
+        <div id="znaknike">
+            <canvas id="canvas" width="184px" height="75px"></canvas>
+            <script>
+                var c=document.getElementById("canvas");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(32.00,6.91);
+                ctx.bezierCurveTo(32.06,6.93,11.69,28.81,7.88,41.19);
+                ctx.bezierCurveTo(7.89,41.24,3.25,54.56,14.00,63.44);
+                ctx.bezierCurveTo(14.00,63.50,23.19,71.69,46.00,63.94);
+                ctx.bezierCurveTo(46.00,63.94,174.36,8.91,174.36,8.91);
+                ctx.bezierCurveTo(174.36,8.91,54.94,39.69,54.94,39.69);
+                ctx.bezierCurveTo(44.81,42.62,35.85,40.52,35.81,40.50);
+                ctx.bezierCurveTo(26.19,36.75,26.06,26.88,26.00,26.88);
+                ctx.bezierCurveTo(26.44,16.31,31.98,6.83,32.00,6.91);
+                ctx.strokeStyle="black";
+                ctx.stroke();
+                ctx.fillStyle="white";
+                ctx.fill();
+                var path = document.querySelector('.path');
+                var length=path.getTotalLength();
+            </script>
+            <div id="podpis">
+                <h2>Rafael Nadal Shoes</h2><img src="slike/podpis.png" height="60px" width="auto" alt="">
+            </div>
+        </div>
+        <div id="okvirji">
+            <div class="shoes">
+                <img src="slike/shoes.jpg" width="auto" height="290px" alt="">
+                <h1>NikeCourt Air Zoom Vapor Cage 4</h1>
+            </div>
+            <div class="shoes">
+                <img src="slike/shoes2.jpg" width="auto" height="290px" alt="">
+                <h1>NikeCourt Air Zoom Vapor Cage 4</h1>
+            </div>
+            <div class="shoes">
+                <img src="slike/shoes3.jpg" width="auto" height="290px" alt="">
+                <h1>NikeCourt Air Zoom Vapor Cage 4</h1>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2020 Nike | Designed by Matej Knapič         
+    </footer>
+</body>
+
+</html>
